@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="800.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LocationController">
+   <children>
+      <Label layoutX="12.0" layoutY="23.0" text="Logement">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="identifiant" layoutX="150.0" layoutY="25.0" prefHeight="26.0" prefWidth="185.0" />
+      <TextField fx:id="adresse" layoutX="110.0" layoutY="82.0" prefHeight="26.0" prefWidth="195.0" />
+      <TextField fx:id="loyer" layoutX="110.0" layoutY="135.0" prefHeight="26.0" prefWidth="195.0" />
+      <TextField fx:id="type" layoutX="106.0" layoutY="187.0" prefHeight="26.0" prefWidth="195.0" />
+      <TextField fx:id="region" layoutX="106.0" layoutY="236.0" prefHeight="26.0" prefWidth="195.0" />
+      <Label layoutX="27.0" layoutY="85.0" style="-fx-color: transparent;" text="Adresse" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="143.0" style="-fx-color: transparent;" text="Loyer" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="190.0" style="-fx-color: transparent;" text="Type" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="239.0" style="-fx-color: transparent;" text="Region" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom_prenom" layoutX="155.0" layoutY="335.0" prefHeight="26.0" prefWidth="195.0" />
+      <TextField fx:id="telephone" layoutX="154.0" layoutY="393.0" prefHeight="26.0" prefWidth="195.0" />
+      <TextField fx:id="cni_2" layoutX="154.0" layoutY="440.0" prefHeight="26.0" prefWidth="195.0" />
+      <Label layoutX="26.0" layoutY="339.0" style="-fx-color: transparent;" text="Nom et prenom" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="397.0" style="-fx-color: transparent;" text="Telephone" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="444.0" style="-fx-color: transparent;" text="CNI" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="295.0" text="Locataire">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cni" layoutX="152.0" layoutY="297.0" prefHeight="26.0" prefWidth="185.0" promptText="CNI" />
+      <ImageView fx:id="img_log" fitHeight="247.0" fitWidth="408.0" layoutX="374.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <DatePicker fx:id="Datedebut" layoutX="368.0" layoutY="337.0" prefHeight="26.0" prefWidth="115.0" promptText="Datedebut" />
+      <DatePicker fx:id="Datefin" layoutX="503.0" layoutY="337.0" prefHeight="26.0" prefWidth="120.0" promptText="Datefin" />
+      <TextField fx:id="periode" layoutX="633.0" layoutY="335.0" prefHeight="26.0" prefWidth="76.0" />
+      <Label layoutX="713.0" layoutY="340.0" style="-fx-color: transparent;" text="mois" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="663.0" layoutY="441.0" mnemonicParsing="false" onMouseClicked="#Ajouter" styleClass="buttons" text="Ajouter" />
+      <Label layoutX="29.0" layoutY="490.0" style="-fx-color: transparent;" text="Date de naissance" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DateNaiss" layoutX="199.0" layoutY="485.0" prefHeight="26.0" prefWidth="159.0" />
+      <ImageView fitHeight="30.0" fitWidth="39.0" layoutX="334.0" layoutY="23.0" onMouseClicked="#Trouver" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Angular/9.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

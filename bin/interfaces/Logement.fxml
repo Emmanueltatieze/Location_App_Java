@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="800.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LogementController">
+   <children>
+      <Label layoutX="9.0" layoutY="3.0" text="Rechercher">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="selection" layoutX="247.0" layoutY="253.0" style="-fx-color: transparent;" text="Aucune selectionnee" textFill="#0080ff">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tab_logement" layoutX="20.0" layoutY="273.0" onMouseClicked="#tabLogEvent" prefHeight="217.0" prefWidth="839.0">
+        <columns>
+          <TableColumn fx:id="tab_id" prefWidth="102.40002632141113" text="            id" />
+          <TableColumn fx:id="tab_adr" prefWidth="175.1999740600586" text="                  adresse" />
+            <TableColumn fx:id="tab_superf" prefWidth="174.4000244140625" text="               superficie" />
+            <TableColumn fx:id="tab_loyer" prefWidth="123.99996948242188" text="             loyer" />
+            <TableColumn fx:id="tab_type" prefWidth="151.2000732421875" text="                 type" />
+            <TableColumn fx:id="tab_region" prefWidth="108.79997558593755" text="           region" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="img_log" fitHeight="246.0" fitWidth="452.0" layoutX="403.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="263.0" layoutY="494.0" mnemonicParsing="false" onMouseClicked="#Ajouter" styleClass="buttons" text="Ajouter" />
+      <Button layoutX="351.0" layoutY="494.0" mnemonicParsing="false" onMouseClicked="#modifier" styleClass="buttons" text="Modifier" />
+      <Button layoutX="438.0" layoutY="494.0" mnemonicParsing="false" onMouseClicked="#supprimer" styleClass="buttons" text="Supprimer" />
+      <TextField fx:id="adresse" layoutX="3.0" layoutY="54.0" prefHeight="26.0" prefWidth="226.0" promptText="adresse" />
+      <TextField fx:id="superficie" layoutX="250.0" layoutY="54.0" promptText="superficie" />
+      <TextField fx:id="identifiant" layoutX="154.0" layoutY="9.0" prefHeight="26.0" prefWidth="170.0" promptText="identifiant" />
+      <Button layoutX="323.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#Telecharger" styleClass="buttons" text="upload" />
+      <ComboBox fx:id="cb_region" layoutX="4.0" layoutY="105.0" onMouseClicked="#remplirRegion" prefWidth="150.0" promptText="region" />
+      <ComboBox fx:id="cb_departement" layoutX="170.0" layoutY="104.0" onMouseClicked="#remplirProvinces" prefWidth="150.0" promptText="departement" />
+      <ComboBox fx:id="cb_commune" layoutX="3.0" layoutY="154.0" onMouseClicked="#remplirCommune" prefWidth="150.0" promptText="commune" />
+      <ComboBox fx:id="cb_type" layoutX="171.0" layoutY="154.0" onMouseClicked="#remplirType" prefWidth="150.0" promptText="type" />
+      <TextField fx:id="loyer" layoutX="3.0" layoutY="205.0" promptText="superficie" text="loyer" />
+      <ImageView fitHeight="30.0" fitWidth="39.0" layoutX="319.0" layoutY="7.0" onMouseClicked="#Trouver" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Angular/9.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

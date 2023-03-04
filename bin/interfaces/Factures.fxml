@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="750.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="29.0" layoutY="42.0" prefHeight="26.0" prefWidth="186.0" promptText="Location" />
+      <TextField layoutX="30.0" layoutY="135.0" prefHeight="26.0" prefWidth="165.0" />
+      <TextField layoutX="220.0" layoutY="135.0" prefHeight="26.0" prefWidth="185.0" />
+      <Label layoutX="57.0" layoutY="106.0" style="-fx-color: transparent;" text="Adresse" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="264.0" fitWidth="287.0" layoutX="446.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="366.0" layoutY="408.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" styleClass="pink-btn" text="Imprimer">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/Angular/10.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField layoutX="30.0" layoutY="214.0" prefHeight="26.0" prefWidth="165.0" />
+      <TextField layoutX="220.0" layoutY="214.0" prefHeight="26.0" prefWidth="185.0" />
+      <TextField layoutX="32.0" layoutY="275.0" prefHeight="26.0" prefWidth="165.0" />
+      <TextField layoutX="222.0" layoutY="275.0" prefHeight="26.0" prefWidth="185.0" />
+      <TextField layoutX="32.0" layoutY="351.0" prefHeight="26.0" prefWidth="165.0" />
+      <Label layoutX="257.0" layoutY="105.0" style="-fx-color: transparent;" text="Region" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="186.0" style="-fx-color: transparent;" text="Locataire" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="185.0" style="-fx-color: transparent;" text="Type" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="253.0" style="-fx-color: transparent;" text="Loyer" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="253.0" style="-fx-color: transparent;" text="Forfaitaire" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="318.0" style="-fx-color: transparent;" text="Montant a payer" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="250.0" layoutY="42.0" prefHeight="26.0" prefWidth="179.0" promptText="Locataire" />
+      <ImageView fitHeight="30.0" fitWidth="39.0" layoutX="437.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Angular/9.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

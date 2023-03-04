@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="750.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AcceuilController">
+   <children>
+      <Pane layoutX="11.0" layoutY="14.0" prefHeight="51.0" prefWidth="726.0" style="-fx-background-color: #0080ff;">
+         <children>
+            <Label layoutX="75.0" layoutY="16.0" style="-fx-color: transparent;" text="Disponibiltés" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab_nbr" layoutX="176.0" layoutY="15.0" text="label" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="35.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/Angular/8.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="img_loc" fitHeight="408.0" fitWidth="417.0" layoutX="51.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="loyer" layoutX="483.0" layoutY="231.0" prefHeight="26.0" prefWidth="238.0" styleClass="tf">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <Label layoutX="488.0" layoutY="209.0" text="Loyer :" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="superficie" layoutX="483.0" layoutY="296.0" prefHeight="26.0" prefWidth="238.0" styleClass="tf">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <Label layoutX="488.0" layoutY="263.0" text="Superficie :" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="region" layoutX="488.0" layoutY="358.0" prefHeight="26.0" prefWidth="238.0" styleClass="tf">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <Label layoutX="488.0" layoutY="330.0" text="Region :" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="precedent" layoutX="509.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#onPrecedent" styleClass="pink-btn" text="&lt;Precedent" />
+      <Button fx:id="suivant" layoutX="629.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#onSuivant" styleClass="pink-btn" text="Suivant&gt;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="adr" layoutX="482.0" layoutY="170.0" prefHeight="26.0" prefWidth="238.0" styleClass="tf">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="487.0" layoutY="144.0" text="Adresse :" textFill="#0080ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

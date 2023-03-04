@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignInController">
+   <children>
+      <VBox fx:id="vbox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="286.0" styleClass="white-pane" stylesheets="@../application/application.css">
+         <children>
+            <VBox />
+            <VBox maxHeight="100.0" maxWidth="286.0" prefHeight="38.0" prefWidth="286.0">
+               <children>
+                  <Label text="Se connecter" textFill="RED">
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox maxWidth="200.0" minWidth="200.0" prefHeight="26.0" prefWidth="200.0" styleClass="tf_box">
+               <children>
+                  <TextField fx:id="user_name" prefHeight="26.0" prefWidth="242.0" promptText="Nom de l'utilisateur" styleClass="tf">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="262.0" maxWidth="200.0" minWidth="200.0" prefHeight="26.0" prefWidth="221.0" styleClass="tf_box">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <PasswordField fx:id="user_mdp" prefHeight="26.0" prefWidth="200.0" promptText="Mot de passe" styleClass="tf" />
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="60.0" prefWidth="286.0">
+               <children>
+                  <Button fx:id="btn_mdp_oubli" layoutX="13.0" layoutY="23.0" mnemonicParsing="false" onAction="#OnGetMdp" styleClass="pink-btn" text="Mot de passe oublie ?" />
+                  <Button fx:id="btn_seConect" layoutX="182.0" layoutY="23.0" mnemonicParsing="false" onAction="#OnConect" styleClass="pink-btn" text="se Connecter" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="221.0" layoutY="233.0" prefHeight="30.0" prefWidth="34.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="34.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="221.0" layoutY="193.0" prefHeight="30.0" prefWidth="34.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="1.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

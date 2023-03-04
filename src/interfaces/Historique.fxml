@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="800.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="31.0" layoutY="40.0" text="Logement">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="181.0" layoutY="42.0" prefHeight="26.0" prefWidth="164.0" promptText="identifiant" />
+      <TextField layoutX="156.0" layoutY="98.0" prefHeight="26.0" prefWidth="217.0" />
+      <TableView layoutX="375.0" layoutY="76.0" prefHeight="378.0" prefWidth="371.0">
+        <columns>
+          <TableColumn prefWidth="85.60009765625" text="  Logement" />
+          <TableColumn prefWidth="120.7999267578125" text="        Locataire" />
+            <TableColumn prefWidth="86.4000244140625" text="    DateDebut" />
+            <TableColumn prefWidth="76.0" text="      dateFin" />
+        </columns>
+      </TableView>
+      <Button layoutX="458.0" layoutY="471.0" mnemonicParsing="false" styleClass="buttons" text="Modifier" />
+      <Button layoutX="545.0" layoutY="471.0" mnemonicParsing="false" styleClass="buttons" text="Supprimer" />
+      <Label layoutX="23.0" layoutY="100.0" style="-fx-background-color: transparent;" text="Adresse" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="154.0" layoutY="141.0" prefHeight="26.0" prefWidth="217.0" />
+      <Label layoutX="21.0" layoutY="143.0" style="-fx-background-color: transparent;" text="Loyer" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="153.0" layoutY="187.0" prefHeight="26.0" prefWidth="217.0" />
+      <Label layoutX="20.0" layoutY="189.0" style="-fx-background-color: transparent;" text="Type" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="153.0" layoutY="232.0" prefHeight="26.0" prefWidth="217.0" />
+      <Label layoutX="20.0" layoutY="234.0" style="-fx-background-color: transparent;" text="Region" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="151.0" layoutY="276.0" prefHeight="26.0" prefWidth="217.0" />
+      <Label layoutX="22.0" layoutY="278.0" style="-fx-background-color: transparent;" text="Nom et prenom" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="152.0" layoutY="317.0" prefHeight="26.0" prefWidth="217.0" />
+      <Label layoutX="23.0" layoutY="319.0" style="-fx-background-color: transparent;" text="Telephone" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="152.0" layoutY="360.0" prefHeight="26.0" prefWidth="217.0" />
+      <Label layoutX="23.0" layoutY="362.0" style="-fx-background-color: transparent;" text="CNI" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="150.0" layoutY="406.0" prefHeight="26.0" prefWidth="217.0" />
+      <Label layoutX="21.0" layoutY="408.0" style="-fx-background-color: transparent;" text="Telephone" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="149.0" layoutY="445.0" prefHeight="26.0" prefWidth="217.0" />
+      <Label layoutX="20.0" layoutY="447.0" style="-fx-background-color: transparent;" text="CNI" textFill="#0080ff">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="39.0" layoutX="345.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Angular/9.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
